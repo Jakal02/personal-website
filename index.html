@@ -20,6 +20,22 @@
       }
     }
   </script>
+  <style>
+    /* Define the fade-in animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Apply the fade-in animation to the specified class */
+    .fade-in {
+        animation: fadeIn 1.5s ease-out;
+    }
+</style>
   <header>
     <div class="absolute left-0 right-0 top-2 z-40 pt-14">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -46,7 +62,19 @@
   </header>
   <div id="main-tile" style="border-top-left-radius: 40px; border-top-right-radius:40px; transform: none; transform-origin: 50% 50% 0px" class="relative flex flex-auto overflow-hidden bg-white pt-14">
     <div style="transform: none; transform-origin: 50% 50% 0px;" class="relative isolate flex w-full flex-col pt-9">
-      Hello</div>
+      <main class="w-full flex-auto">
+        <div class="mt-56 mx-auto max-w-7xl px-10">
+          <div class="max-w-3xl">
+            <h1 class="text-5xl font-medium tracking-tight text-neutral-950 fade-in">
+              AI practitioner based in Ann Arbor.
+            </h1>
+            <p class="text-xl mt-6">
+              I am a computer science professional working to productionalize AI designs to better serve clients.
+            </p>
+        </div>
+        </div>
+      </main>
+    </div>
   </div>
 </body>
 </html>
