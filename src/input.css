@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root{
+    --header-color: #f8f8f8;
+    --navbar-spacing: 12px;
+}
+
+body{
+    font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
+    margin:0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    flex: 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Header */
+
+header {
+    background-color: var(--header-color);
+    width:100%;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.nav-ul {
+    list-style-type: none;
+    border-right: 1px solid;
+    display: inline-block;
+    padding-left: var(--navbar-spacing);
+    padding-right: var(--navbar-spacing);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: var(--navbar-spacing);
+    margin-right: var(--navbar-spacing);
+}
+
+
+/* Content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 auto;
+}
+
+.card{
+    display: inline-block;
+}

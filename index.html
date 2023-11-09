@@ -1,78 +1,35 @@
 <!doctype html>
-<html lang="en" class="h-full bg-neutral-950 text-base antialiased">
+<html lang="en"">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="/src/input.css" rel="stylesheet">
   <title>Personal Website</title>
 </head>
 
-<body class="flex min-h-full flex-col">
-  <script type="text/javascript">
-    function navbar(button){
-      if(document.getElementById("sandwich").getAttribute("aria-expanded")=="false"){
-        document.getElementById("sandwich").setAttribute("aria-expanded", "true");
-        document.getElementById("main-tile").classList.add("mt-40");
-      }
-      else if(document.getElementById("sandwich").getAttribute("aria-expanded")=="true"){
-        document.getElementById("sandwich").setAttribute("aria-expanded", "false");
-        document.getElementById("main-tile").classList.remove("mt-40");
-      }
-    }
-  </script>
-  <style>
-    /* Define the fade-in animation */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    /* Apply the fade-in animation to the specified class */
-    .fade-in {
-        animation: fadeIn 1.5s ease-out;
-    }
-</style>
-  <header>
-    <div class="absolute left-0 right-0 top-2 z-40 pt-14">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="flex items-center justify-between">
-          <a aria-label="Home" href="/">
-            <span>Logo</span>
-          </a>
-          <div class="flex items-center gap-x-8">
-            <a href="/contact" class="inline-flex rounded-full bg-neutral-950 text-white px-4 py-1.5 text-sm font-semibold transition hover:bg-neutral-700" class="bg-white">
-              <span class="relative">
-                Contact me
-              </span>
-            </a>
-            <button type="button" id="sandwich" onclick="navbar(this)" aria-expanded="false" class="rounded-full -m-2.5 p-2.5 transition hover:bg-neutral-950/10">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 fill-neutral-950 group-hover:fill-neutral-700">
-                <path d="M2 6h20v2H2zM2 16h20v2H2z">
-                </path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div id="main-tile" style="border-top-left-radius: 40px; border-top-right-radius:40px; transform: none; transform-origin: 50% 50% 0px" class="relative flex flex-auto overflow-hidden bg-white pt-14">
-    <div style="transform: none; transform-origin: 50% 50% 0px;" class="relative isolate flex w-full flex-col pt-9">
-      <main class="w-full flex-auto">
-        <div class="mt-56 mx-auto max-w-7xl px-10">
-          <div class="max-w-3xl">
-            <h1 class="text-5xl font-medium tracking-tight text-neutral-950 fade-in">
-              AI practitioner based in Ann Arbor.
-            </h1>
-            <p class="text-xl mt-6">
-              I am a computer science professional working to productionalize AI designs to better serve clients.
-            </p>
-        </div>
-        </div>
+<body>
+  <div class="container">
+    <header class="banner">
+      <nav>
+        <ul class="nav-ul">
+          <li class="nav-item">
+            about
+          </li>
+          <li class="nav-item">
+            posts
+          </li>
+          <li class="nav-item">
+            other
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <main class="card">
+        <h1>
+          Elijah Grubbs
+        </h1>
+        <p>CS Graduate from The University of Michigan.</p>
       </main>
     </div>
   </div>
