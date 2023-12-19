@@ -5,6 +5,7 @@
 
 :root{
     --header-color: #f8f8f8;
+    --header-padding: 20px;
     --navbar-spacing: 12px;
     --normal-text-color: #222222;
 }
@@ -16,7 +17,9 @@ body{
     display: flex;
     flex-direction: column;
     font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.06em;
 }
 
 .container{
@@ -32,6 +35,8 @@ body{
 header {
     background-color: var(--header-color);
     width:100%;
+    padding-top: var(--header-padding);
+    padding-bottom: var(--header-padding);
 }
 
 nav {
@@ -45,10 +50,11 @@ nav {
     list-style-type: none;
     border-right: 1px solid;
     display: inline-block;
-    padding-left: var(--navbar-spacing);
-    padding-right: var(--navbar-spacing);
-    padding-top: 3px;
-    padding-bottom: 3px;
+    margin-left: var(--navbar-spacing);
+    margin-right: var(--navbar-spacing);
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 0 var(--navbar-spacing);
 }
 
 .nav-item {
